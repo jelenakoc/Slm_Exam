@@ -13,14 +13,13 @@ public class Controller {
         StringBuilder modifiedString = new StringBuilder();
 
         for (int i = 0; i < string.length(); i++) {
-            char currentChar = string.charAt(i);
+            char c = string.charAt(i);
 
             if (i % 2 == 1) {
-                // Convert every second character to uppercase
-                currentChar = Character.toUpperCase(currentChar);
+                c = Character.toUpperCase(c);
             }
 
-            modifiedString.append(currentChar);
+            modifiedString.append(c);
         }
 
         return modifiedString.toString();
